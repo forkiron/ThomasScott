@@ -1,4 +1,3 @@
-import React from "react";
 import change1 from "../assets/change1.png";
 
 const Action = () => {

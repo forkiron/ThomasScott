@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from "react";
+import { type FormEvent } from "react";
 
 interface Props {
   submitInput: (inputUse: string) => void;
