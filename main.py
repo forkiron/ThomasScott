@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://thomasscott-frontend.onrender.com"], supports_credentials=True)
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
@@ -13,6 +13,8 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 @app.route('/ask', methods=['POST'])
 def ask_question():
+    if request.method == 'OPTIONS':
+        return '', 200
     data = request.get_json()
     question = data.get("question", "")
     print(f"🟠 Question received: {question}")
