@@ -58,13 +58,16 @@ function App() {
     console.log("Sending question:", inputUse);
 
     try {
-      const response = await fetch("https://thomasscott.onrender.com/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question: inputUse }),
-      });
+      const response = await fetch(
+        "https://thomasscott-frontend.onrender.com/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ question: inputUse }),
+        }
+      );
 
       const data = await response.json();
       setAssistantResponse(data.answer);
