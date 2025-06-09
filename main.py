@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import os
 import google.generativeai as genai
 from flask import Flask, request, jsonify
@@ -7,7 +6,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-load_dotenv()
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
