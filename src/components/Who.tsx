@@ -13,7 +13,7 @@ const Who = () => {
 
       {/* Content box */}
       <div className="bg-gradient-to-b md:flex md:justify-around md:items-center from-[#F0F8FF] via-[#F0F8FF] to-orange-50 w-full max-w-lg rounded-3xl p-4 shadow-xl ">
-        <div className="text-[0.5rem]/5 text-gray-600 font-medium md:text-base/6 lg:text-base/10 text-left">
+        <div className="text-[0.65rem]/5 text-gray-600 font-medium md:text-base/6 lg:text-base/10 text-left">
           <p>☑ Irish Protestant.</p>
           <p>
             ☑ <u>Leader</u> at Heart.
