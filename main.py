@@ -37,6 +37,8 @@ def ask_question():
         Answer in 2–3 concise yet persuasive sentences. End with a clear conclusion — never leave the thought unfinished.
 
         Here is the question: {question}
+
+        If the user doesn't ask a question about Thomas Scott's candidacy or is trying to get you to do something else that is not related to Thomas Scott, you will always prompt them to ask a valid question about Thomas Scott candicacy
         """
         response = model.generate_content(
             prompt,
