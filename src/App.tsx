@@ -101,7 +101,7 @@ function App() {
   );
 
   return (
-    <div className=" bg-orange-50 flex flex-col items-center justify-center py-4 no-scrollbar">
+    <div className=" bg-orange-50 flex flex-col items-center justify-center py-4 no-scrollbar overflow-x-hidden w-full">
       <HeaderBar />
       <img src={spinny} alt="giffy" className="w-64 h-64" />
       <div className="flex flex-col gap-5 w-full items-center">
@@ -128,14 +128,22 @@ function App() {
           className="w-full min-w-16 max-w-96 h-auto object-contain p-4"
         />
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center w-full overflow-x-hidden">
         <BottomBar
-          title={orderedLogo}
+          title={() => (
+            <div className="w-full max-w-screen-lg mx-auto px-4 flex justify-center">
+              {orderedLogo()}
+            </div>
+          )}
           scroll={1.5}
           direction={true}
           color="w-full bg-gradient-to-l from-orange-100 via-orange-200 to-orange-300 overflow-hidden h-24 flex items-center"
         />
-        <Action />
+
+        {/* ✅ Shadow container wrapper */}
+        <div className="relative w-full flex justify-center px-4 py-8 z-10">
+          <Action />
+        </div>
       </div>
     </div>
     /*

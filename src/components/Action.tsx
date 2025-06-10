@@ -2,8 +2,8 @@ import change1 from "../assets/change1.png";
 
 const Action = () => {
   return (
-    <div className="w-full px-4 flex justify-center items-center">
-      <div className="flex flex-col items-center shadow-xl bg-gradient-to-r from-[#f4f6f9] via-[#F0F8FF] to-[#FFF8E1] rounded-xl px-4 py-8 w-full max-w-md">
+    <div className="w-full px-4 flex justify-center items-center pt-4">
+      <div className="flex flex-col items-center shadow-xl bg-gradient-to-r from-[#f4f6f9] via-[#F0F8FF] to-[#FFF8E1] rounded-xl px-4 py-8 sm:w-full w-72 max-w-md ">
         <img className="object-contain w-64 md:w-80" src={change1} alt="" />
 
         <div className="text-black font-poppins text-center mt-4 space-y-1">
