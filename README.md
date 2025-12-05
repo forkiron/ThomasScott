@@ -1,3 +1,3 @@
-# Thomas Scott Proggy
+# Thomas Scott Project
 
-thomas scott is amazing
+thomas scott is amazing and he won class school election hohoho
